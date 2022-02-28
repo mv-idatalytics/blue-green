@@ -1,0 +1,48 @@
+{
+
+  "name": "orangehrm/orangehrm",
+  "description": "OrangeHRM open source",
+  "keywords": ["orangehrm"],
+  "type": "project",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/orangehrm/symfony1"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/orangehrm/doctrine1"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/orangehrm/LightOpenID"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "require": {
+    "friendsofsymfony1/symfony1": "dev-master",
+    "friendsofsymfony1/doctrine1": "dev-master",
+    "iignatov/lightopenid": "dev-master",
+    "phpseclib/phpseclib": "~2.0",
+    "respect/validation": "1.1.31",
+    "psr/log": "^1.0",
+    "google/apiclient": "^2.12",
+    "bjeavons/zxcvbn-php": "^0.3",
+    "bshaffer/oauth2-server-php": "^1.11",
+    "scssphp/scssphp": "^1.8",
+    "guzzlehttp/guzzle": "^6.5",
+    "swiftmailer/swiftmailer": "~5.4.12"
+  },
+  "require-dev": {
+    "codeception/codeception": "^2.2",
+    "phpunit/phpunit": "^5.7",
+    "zircote/swagger-php": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Orangehrm\\Rest\\":"../plugins/orangehrmRESTPlugin/lib"
+    }
+  }
+}
